@@ -1,16 +1,15 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   text-align: center;
   background-color: #FFFFFF;
-  text-transform: uppercase;
-
+  background-image: url(../img/backgroundphoto.jpg);
   background-position: top center;
+  text-transform: uppercase;
   background-repeat: no-repeat;
 }
 
@@ -20,7 +19,7 @@ a {
 
 .main-navigation {
   text-decoration: none;
-
+  background-color: #FFFFFF;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
@@ -51,34 +50,61 @@ a {
   list-style: none;
 }
 
+.sort {
+    list-style: none;
+}
+
 .slogan {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
 }
 
-.advantage-item-blue {
-  background-color: #81B3D2;
-  color: #FFFFFF;
-  width: 400px;
-  height: 256px;
+.advantages-list {
+  padding-right: 60px;
+  padding-left: 60px;
+  padding-top: 46px;
+  padding-bottom: 64px;
 }
 
-.advantage-item-brown {
+
+
+.advantage-item {
   width: 400px;
-  height: 256px;
   background-color: #EEEEEE;
+  padding-right: 60px;
+  padding-left: 60px;
+  padding-top: 46px;
+  padding-bottom: 64px;
+  margin-bottom: 10px;
 }
+
+.advantage-item-white {
+  background-color: #81B3D2;
+  color: #FFFFFF;
+}
+
+
 
 .service {
   width: 400px;
-  height: 256px;
   list-style: none;
+}
 
-
-h1, h2, h3, h4 {
+h3 {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
 
 }
+
+.social-container { 
+  width: 46px;
+  background-color: #81b3d2;
+  border: 1px solid #ccc;
+  list-style: none;
+  margin: 0 10px 10px 0;
+  padding: 6px;
+  color: #000000;
+}
+
