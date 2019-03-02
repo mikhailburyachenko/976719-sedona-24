@@ -17,10 +17,11 @@ a {
 
 .main-navigation {
   text-decoration: none;
-  background-color: #FFFFFF;
+ /* background-color: #FFFFFF;*/
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+  background-size: 1200px auto;
 
 }
 
@@ -55,8 +56,6 @@ a {
   font-weight: 700;
   line-height: 26px;
 }
-
-
 
 
 .advantage-item {
@@ -98,3 +97,77 @@ h3,
   color: #766357;
 }
 
+.visually-hidden {
+  visibility: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+/* Временно для сетки*/
+
+body {
+width: 1280px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+
+  background-image: url("img/sedona-index.jpg");
+  background-repeat: no-repeat;
+  background-color: #FFFFFF;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.main-navigation {
+  text-decoration: none;
+  line-height: 26px;
+  font-weight: 700;
+  display: flex;
+  margin-bottom: -15px;
+}
+
+.main-header-logo {
+    background-color: transparent;
+  order: 1;
+ 
+  width: 200px;
+ }
+
+ .navigation-right {
+  order:2;
+  width:500px;
+  text-align: right;
+ }
+
+.navigation-left {
+  width:500px;
+  text-align: left;
+}
+
+.slogan {
+  margin-top: 62px;
+}
+
+.backgroundphoto {
+    background-color: transparent;
+}
+
+.navigation-list-left {
+  display: inline;
+  margin-left:70px;
+  margin-right: 75px;
+}
+
+.navigation-list-right {
+  display: inline;
+  margin-right: 110px;
+  margin-left: 50px;
+
+
+}
