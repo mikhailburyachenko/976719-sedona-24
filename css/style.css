@@ -75,11 +75,18 @@ a {
   list-style: none;
 }
 
-h3,
+h3, b, span,
 .footer-hashtag {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
+
+}
+
+.sort-high,
+.sort-interactive {
+  font-size: 12px;
+  line-height: 18px;
 
 }
 
@@ -117,7 +124,7 @@ width: 1280px;
   font-weight: 400;
   color: #333333;
 
-  background-image: url("img/sedona-index.jpg");
+  background-image: url("img/sedona-index.jg");
   background-repeat: no-repeat;
   background-color: #FFFFFF;
   text-transform: uppercase;
@@ -129,11 +136,11 @@ width: 1280px;
   line-height: 26px;
   font-weight: 700;
   display: flex;
-  margin-bottom: -15px;
+  margin-bottom: -30px;
 }
 
 .main-header-logo {
-    background-color: transparent;
+  background-color: transparent;
   order: 1;
  
   width: 200px;
@@ -154,9 +161,7 @@ width: 1280px;
   margin-top: 62px;
 }
 
-.backgroundphoto {
-    background-color: transparent;
-}
+
 
 .navigation-list-left {
   display: inline;
@@ -166,8 +171,91 @@ width: 1280px;
 
 .navigation-list-right {
   display: inline;
-  margin-right: 110px;
+ margin-right: 110px;
   margin-left: 50px;
+}
+
+.backgroundphoto  {
+  background-color: transparent;
+}
+
+.advantages-list {
+  display:flex;
+  flex-direction: column;
+
+  padding: 0px;
+  width: 1200px;
+  margin-top: 60px;
+  margin-bottom: 55px;
+ justify-content: space-between;
+
+}
+
+.advantages-list-second {
+  display:flex;
+  justify-content: space-between;
+}
 
 
+.second-advantage {
+  padding: 45px 0px;
+  order:1;
+  display: inline;
+}
+
+.last-advantage {
+  order:2;
+    padding: 45px 60px;
+}
+
+.service {
+  width: 400px;
+  padding-right: 40px;
+  padding-left: 40px;
+
+}
+
+.brown-advantages {
+  display:flex;
+  justify-content: space-between;
+  order:3;
+}
+
+.main-footer {
+  display:flex;
+}
+
+.footer-hashtag {
+  margin-left: 70px;
+  width: 240px;
+}
+
+.footer-social {
+  width: 400px;
+  margin-left: 90px;
+}
+
+.social-media {
+  padding: 0px 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-copyright {
+  margin-left: 88px;
+  width: 240px;
+  padding-left: 15px;
+}
+
+.findings-head {
+  margin-top: 35px;
+  display: flex;
+  margin-left:110px;
+}
+
+.container-hotels {
+  width: 1055px;
+}
+.sort {
+  display: flex;
 }

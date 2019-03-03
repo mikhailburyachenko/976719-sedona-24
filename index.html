@@ -26,64 +26,65 @@
       </nav>
     </header>
 
-    <main class="container">
+    <main class="container-index">
       <h1 class="visually-hidden">Туристический город «Седона»</h1>
       <img src="img/backgroundphoto.jpg" width="1200" height="508" alt="Фото Седоны" class="backgroundphoto">
-      <p class="slogan">Седона - небольшой городок в аризоне, заслуживающий большего!</p>      
+      <p class="slogan">Седона - небольшой городок в аризоне,<br> заслуживающий большего!</p>      
       <section class="advantages">
         <h2 class="visually-hidden">Достоинства</h2>
         <p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
         <ul class="advantages-list">
          
-         <li class="advantage-item-white">
+         <li class="advantage-item-white first-advantage">
             <h3>Настоящий городок</h3>
               <p> —№1— </p>
               <p> Седона — не аттракцион для туристов, там течёт своя жизнь </p>
                 <img src="img/bar.jpg" alt="фото бара" height="256" weight="800">
           </li>
           
-          <li class="advantage-item-white">
+          <li class="advantage-item-white last-advantage">
               <h3>Там есть мост дьявола</h3>
               <p>—№2—</p>
               <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             <img src="img/bridge.jpg" alt="мост дьявола" height="256" weight="800">
           </li>
-
-          <li class="advantage-item">
+          <div class= "brown-advantages">
+          <li class="advantage-item last-advantage">
             <h3>Небольшая площадь</h3>
             <p>—№3—</p>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
 
-          <li class="advantage-item">
+          <li class="advantage-item last-advantage">
             <h3>Красивая дорога</h3>
             <p>—№4—</p>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
 
-          <li class="advantage-item">
+          <li class="advantage-item last-advantage">
             <h3>Мало туристов</h3>
             <p>—№5—</p>
             <p>Большинство едет в гранд каньон и толпится там</p>
           </li>
+           </div>
 
-          <li class="advantage-item-bounce">
-            <ul class="advantages-list">
+          <li class="advantage-item-bounce second-advantage">
+            <ul class="advantages-list-second">
                     <li class="service">
-                      <h3>Жилье</h3>
                       <img src="img/house.svg" alt="Жилье" width="75" height="72">
+                      <h3>Жилье</h3>
                       <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                     </li>
 
                     <li class="service">
-                      <h3>Еда</h3>
                       <img src="img/burger.svg" alt="Еда" width="74" height="70">
+                      <h3>Еда</h3>
                       <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                     </li>
 
                     <li class="service">
-                      <h3>Сувениры</h3>
                       <img src="img/gifts.svg" alt="Сувениры" width="64" height="76">
+                      <h3>Сувениры</h3>
                       <p>Не только китайского, но и местного производства!</p>
                     </li>
                   </ul>
@@ -94,7 +95,7 @@
       <section class="location">
         <h2 class="visually-hidden">Бронь гостиницы</h2> 
         <b>Заинтересовались?</b>
-          <p>Укажите предполагаемые двты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <form action="/echo" method="get">
           <input type="button" value="Поиск гостиницы в Седоне" class="button">
           <label for="coming-date">Дата заезда</label>
@@ -116,7 +117,7 @@
         #VISITSEDONA
       </p>
       <div class="footer-social">
-        <ul>
+        <ul class="social-media">
           <div class="social-container">
             <li><a class="social-button" href="#">
               <img src="img/twitter.svg" alt="Твиттер">
