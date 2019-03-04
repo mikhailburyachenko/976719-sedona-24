@@ -247,10 +247,14 @@ width: 1280px;
   padding-left: 15px;
 }
 
+.container-hotels{
+  margin-left: 73px;
+}
+
 .findings-head {
   margin-top: 35px;
   display: flex;
-  margin-left:110px;
+  margin-left:37px;
 }
 
 .container-hotels {
@@ -259,3 +263,22 @@ width: 1280px;
 .sort {
   display: flex;
 }
+
+.results-background {
+  display: flex;
+}
+
+.results-picture {
+  width: 165px;
+  text-align: left;
+}
+
+.results-information {
+  width: 365px;
+  text-align: left;
+
+
+}
+
+
+
