@@ -1,129 +1,12 @@
 body {
-  margin: 0;
+width: 1200px;
+  margin: auto;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: #333333;
-  background-color: #FFFFFF;
-  text-transform: uppercase;
-
-}
-
-a {
-  text-decoration: none;
-}
-
-.main-navigation {
-  text-decoration: none;
- /* background-color: #FFFFFF;*/
-  line-height: 26px;
-  font-weight: 700;
-  color: #000000;
-  background-size: 1200px auto;
-
-}
-
-.site-navigation {
-  list-style: none;
-}
-
-.site-navigation a {
-  color: #000000;
-}
-
-.site-navigation a:hover {
-  color: #81B3D2;
-}
-
-.site-navigation a:focus {
-  color: #B2B2B2;
-}
-
-
-.advantages-list {
-  list-style: none;
-}
-
-.sort,
-.hotels-sort {
-    list-style: none;
-}
-
-.slogan {
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
-}
-
-
-.advantage-item {
-  width: 400px;
-  background-color: #EEEEEE;
-
-}
-
-.advantage-item-white {
-  background-color: #81B3D2;
-  color: #FFFFFF;
-}
-
-
-.service {
-  width: 400px;
-  list-style: none;
-}
-
-h3, b, span,
-.footer-hashtag {
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
-
-}
-
-.sort-high,
-.sort-interactive {
-  font-size: 12px;
-  line-height: 18px;
-
-}
-
-.social-container { 
-  width: 46px;
-  background-color: #81b3d2;
-  border: 1px solid #ccc;
-  list-style: none;
-  margin: 0 10px 10px 0;
-  padding: 6px;
-  color: #000000;
-}
-
-.current-page a {
-  color: #766357;
-}
-
-.visually-hidden {
-  visibility: hidden;
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-/* Временно для сетки*/
-
-body {
-width: 1280px;
-  margin: 0;
-  padding: 0;
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  color: #333333;
-
   background-image: url("img/sedona-index.jg");
   background-repeat: no-repeat;
   background-color: #FFFFFF;
@@ -131,30 +14,39 @@ width: 1280px;
   text-align: center;
 }
 
+
+a {
+  text-decoration: none;
+}
+
 .main-navigation {
   text-decoration: none;
+  background-color: #FFFFFF;
   line-height: 26px;
   font-weight: 700;
+  color: #000000;
+  background-size: 1200px auto;
   display: flex;
-  margin-bottom: -30px;
+  justify-content: space-between;
 }
 
 .main-header-logo {
-  background-color: transparent;
-  order: 1;
- 
-  width: 200px;
+position: absolute;
+left: 50%;
+margin-right:-50%;
+transform: translate(-50%, 0%);
  }
 
- .navigation-right {
-  order:2;
-  width:500px;
-  text-align: right;
- }
 
 .navigation-left {
   width:500px;
-  text-align: left;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-list-left {
+  width: 500px;
 }
 
 .slogan {
@@ -162,32 +54,15 @@ width: 1280px;
 }
 
 
-
-.navigation-list-left {
-  display: inline;
-  margin-left:70px;
-  margin-right: 75px;
-}
-
-.navigation-list-right {
-  display: inline;
- margin-right: 110px;
-  margin-left: 50px;
-}
-
-.backgroundphoto  {
-  background-color: transparent;
-}
-
 .advantages-list {
   display:flex;
   flex-direction: column;
-
+  list-style: none; 
   padding: 0px;
   width: 1200px;
   margin-top: 60px;
   margin-bottom: 55px;
- justify-content: space-between;
+  justify-content: space-between;
 
 }
 
@@ -199,13 +74,18 @@ width: 1280px;
 
 .second-advantage {
   padding: 45px 0px;
-  order:1;
+  order:0;
   display: inline;
 }
 
 .last-advantage {
   order:2;
     padding: 45px 60px;
+}
+
+.third-advantage {
+  order:1;
+
 }
 
 .service {
@@ -260,6 +140,7 @@ width: 1280px;
 .container-hotels {
   width: 1055px;
 }
+
 .sort {
   display: flex;
 }
@@ -276,9 +157,102 @@ width: 1280px;
 .results-information {
   width: 365px;
   text-align: left;
+}
 
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover {
+  color: #81B3D2;
+}
+
+.site-navigation a:focus {
+  color: #B2B2B2;
+}
+
+.sort,
+.hotels-sort {
+    list-style: none;
+}
+
+.slogan {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+
+.advantage-item {
+  width: 400px;
+  background-color: #EEEEEE;
 
 }
+
+.first-advantage {
+  display: flex;
+
+}
+
+.advantage-item-white {
+  background-color: #81B3D2;
+  color: #FFFFFF;
+  width: 400px;
+}
+
+
+.service {
+  width: 400px;
+  list-style: none;
+}
+
+.big-parts,
+.footer-hashtag {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+
+}
+
+.sort-high,
+.sort-interactive {
+  font-size: 12px;
+  line-height: 18px;
+
+}
+
+.social-container { 
+  width: 46px;
+  background-color: #81b3d2;
+  border: 1px solid #ccc;
+  list-style: none;
+  margin: 0 10px 10px 0;
+  padding: 6px;
+  color: #000000;
+}
+
+.current-page a {
+  color: #766357;
+}
+
+.visually-hidden {
+  visibility: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+
+
+
+
+
 
 
 
