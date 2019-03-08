@@ -14,6 +14,7 @@ width: 1200px;
   text-align: center;
 }
 
+240 650 165
 
 a {
   text-decoration: none;
@@ -31,6 +32,7 @@ a {
 }
 
 .main-header-logo {
+width: 200px;
 position: absolute;
 left: 50%;
 margin-right:-50%;
@@ -39,18 +41,19 @@ transform: translate(-50%, 0%);
 
 
 .navigation-left {
-  width:500px;
+  width: 478px;
   padding: 0px;
   display: flex;
-  justify-content: space-between;
+  text-align: center;
 }
 
 .navigation-list-left {
-  width: 500px;
+  width: 239px;
+
 }
 
 .slogan {
-  margin-top: 62px;
+  margin-top: 60px;
 }
 
 
@@ -63,7 +66,6 @@ transform: translate(-50%, 0%);
   margin-top: 60px;
   margin-bottom: 55px;
   justify-content: space-between;
-
 }
 
 .advantages-list-second {
@@ -75,12 +77,11 @@ transform: translate(-50%, 0%);
 .second-advantage {
   padding: 45px 0px;
   order:0;
-  display: inline;
 }
 
 .last-advantage {
   order:2;
-    padding: 45px 60px;
+  padding: 45px 60px;
 }
 
 .third-advantage {
@@ -90,59 +91,67 @@ transform: translate(-50%, 0%);
 
 .service {
   width: 400px;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-right: 0px 40px;
 
 }
 
 .brown-advantages {
   display:flex;
-  justify-content: space-between;
   order:3;
 }
 
 .main-footer {
   display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-hashtag {
-  margin-left: 70px;
-  width: 240px;
+  width: 400px;
 }
 
 .footer-social {
   width: 400px;
-  margin-left: 90px;
 }
 
 .social-media {
-  padding: 0px 120px;
   display: flex;
-  justify-content: space-between;
+  
 }
 
 .footer-copyright {
-  margin-left: 88px;
-  width: 240px;
-  padding-left: 15px;
+
+
 }
 
 .container-hotels{
-  margin-left: 73px;
+  padding: 0px 72px;
 }
 
 .findings-head {
-  margin-top: 35px;
   display: flex;
-  margin-left:37px;
+  align-items: flex-end;
+  margin-top: 20px; /*Временно для сетки*/
 }
 
-.container-hotels {
-  width: 1055px;
+.findings-head-first {
+  width: 165px;
+  text-align: left;
+}
+
+.findings-head-second {
+  display: flex;
+  width: 365px;
+  justify-content: space-between;
+
 }
 
 .sort {
   display: flex;
+  margin: 0px;
+  padding: 0px;
+  width: 200px;
+  justify-content: space-between;
 }
 
 .results-background {
@@ -155,8 +164,23 @@ transform: translate(-50%, 0%);
 }
 
 .results-information {
-  width: 365px;
+  width: 650px;
   text-align: left;
+}
+
+.results-information-rate {
+  width: 240px;
+  text-align: right;
+  align-self: space-between; 
+}
+
+.results-information-more {
+  display: flex;
+}
+
+.results-information-type {
+  width: 116px;
+
 }
 
 .site-navigation {
@@ -178,6 +202,7 @@ transform: translate(-50%, 0%);
 .sort,
 .hotels-sort {
     list-style: none;
+    padding: 0px;
 }
 
 .slogan {
@@ -195,7 +220,6 @@ transform: translate(-50%, 0%);
 
 .first-advantage {
   display: flex;
-
 }
 
 .advantage-item-white {
@@ -215,14 +239,14 @@ transform: translate(-50%, 0%);
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
-
+  margin: 0px;
 }
 
 .sort-high,
 .sort-interactive {
   font-size: 12px;
   line-height: 18px;
-
+  margin: 0px;
 }
 
 .social-container { 
@@ -230,9 +254,10 @@ transform: translate(-50%, 0%);
   background-color: #81b3d2;
   border: 1px solid #ccc;
   list-style: none;
-  margin: 0 10px 10px 0;
-  padding: 6px;
   color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .current-page a {

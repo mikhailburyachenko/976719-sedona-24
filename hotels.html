@@ -11,16 +11,18 @@
 
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
+        <div class="main-header-logo">
+        <a href="index.html">
           <img src="img/logo.svg" width="140" height="72" alt="Герб «Седона»">
         </a>
+        </div>
         <ul class="site-navigation navigation-left">
           <li class="navigation-list-left"><a href="info.html">Информация</a></li>
           <li class="navigation-list-left"><a href="content.html">Фото и видео</a></li>
         </ul>
-        <ul class="site-navigation navigation-right">
-          <li class="navigation-list-right"><a href="map.html">Карта штата</a></li>
-          <li class="navigation-list-right current-page"><a href="hotels.html">Гостиницы</a></li>
+        <ul class="site-navigation navigation-left">
+          <li class="navigation-list-left"><a href="map.html">Карта штата</a></li>
+          <li class="navigation-list-left current-page"><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -48,14 +50,17 @@
       <section class="findings">
         <h2 class="visually-hidden">Результат поиска</h2>
         <div class="findings-head">
-        <span> Найдено:3 </span>
-
-        <h3 class="big-parts">Сортировка:</h3>
+          <div class="findings-head-first">
+            <span class="big-parts"> Найдено:3 </span>
+          </div>
+        <div class="findings-head-second">
+          <h3 class="sort-interactive">Сортировка:</h3>
           <ul class="sort">
              <li class="sort-interactive">По цене</li>
              <li class="sort-interactive">По типу</li>
              <li class="sort-interactive">По рейтингу</li>
           </ul>
+        </div>
 
         </div>
       
@@ -71,11 +76,13 @@
                   <div class="hotels-name">
                    <h3 class="big-parts">Amara resort & spa</h3> 
                   </div>
+                  <div class="results-information-more">
                     <div class="results-information-type">
                       <p>Гостиница</p>
                         <div class="results-information-type-button">
                           <a class="type-button" href="hotel-information.html">Подробнее</a>
-                    </div>
+                        </div>
+                      </div>
                     <div class="results-information-cost">
                       <p>От 4000 Р</p>
                         <div class="results-information-cost-button">
@@ -106,6 +113,7 @@
                     <div class="hotels-name">
                       <h3 class="big-parts">Desert quail inn</h3> 
                     </div>
+                    <div class="results-information-more">
                     <div class="results-information-type">
                         <p>Мотель</p>
                         <div class="results-information-type-button">
@@ -118,6 +126,7 @@
                          <a class="cost-button" href="motel-cost.html">Забронировать</a>
                        </div>
                     </div>
+                  </div>
                 </div>
                   <div class="results-information-rate">
                       <img src="img/star.svg" alt="звезда">
@@ -135,7 +144,8 @@
                   <img src="img/appartments.jpg" width="135" height="90" alt="Аппартаменты">
                 </div>
                   <div class="results-information">
-                   <h3  class="big-parts">Villas at poco diablo</h3> 
+                   <h3  class="big-parts">Villas at poco diablo</h3>
+                   <div class="results-information-more"> 
                     <div class="results-information-type">
                       <p>Аппартаменты</p>
                         <div class="results-information-type-button">
@@ -149,6 +159,7 @@
                         </div>
                     </div>
                   </div>
+                </div>
                     <div class="results-information-rate">
                       <img src="img/star.svg" alt="звезда">
                       <img src="img/star.svg" alt="звезда">
