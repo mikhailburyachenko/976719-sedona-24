@@ -1,23 +1,25 @@
 body {
-width: 1200px;
-  margin: auto;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: #333333;
-  background-image: url("img/sedona-index.jg");
-  background-repeat: no-repeat;
-  background-color: #FFFFFF;
   text-transform: uppercase;
   text-align: center;
 }
 
-240 650 165
-
+.container {
+  width:1200px;
+  margin: auto;
+}
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .main-navigation {
@@ -26,17 +28,15 @@ a {
   line-height: 26px;
   font-weight: 700;
   color: #000000;
-  background-size: 1200px auto;
   display: flex;
   justify-content: space-between;
 }
 
 .main-header-logo {
-width: 200px;
-position: absolute;
-left: 50%;
-margin-right:-50%;
-transform: translate(-50%, 0%);
+  position: absolute;
+  left: 50%;
+  margin-right:-50%;
+  transform: translate(-50%, 0%);
  }
 
 
@@ -62,7 +62,6 @@ transform: translate(-50%, 0%);
   flex-direction: column;
   list-style: none; 
   padding: 0px;
-  width: 1200px;
   margin-top: 60px;
   margin-bottom: 55px;
   justify-content: space-between;
@@ -71,6 +70,7 @@ transform: translate(-50%, 0%);
 .advantages-list-second {
   display:flex;
   justify-content: space-between;
+  list-style: none;
 }
 
 
@@ -79,50 +79,40 @@ transform: translate(-50%, 0%);
   order:0;
 }
 
-.last-advantage {
-  order:2;
-  padding: 45px 60px;
-}
-
 .third-advantage {
   order:1;
-
 }
 
-.service {
-  width: 400px;
-  padding-right: 0px 40px;
-
-}
 
 .brown-advantages {
   display:flex;
   order:3;
+  justify-content: space-between;
 }
 
 .main-footer {
   display:flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .footer-hashtag {
-  width: 400px;
-}
-
-.footer-social {
-  width: 400px;
-}
-
-.social-media {
-  display: flex;
-  
+  margin-left: 130px;
 }
 
 .footer-copyright {
-
-
+  margin-right: 100px; 
 }
+
+
+.footer-social {
+  
+}
+
+.social-media {
+  display: flex;  
+}
+
 
 .container-hotels{
   padding: 0px 72px;
@@ -131,18 +121,17 @@ transform: translate(-50%, 0%);
 .findings-head {
   display: flex;
   align-items: flex-end;
-  margin-top: 20px; /*Временно для сетки*/
 }
 
 .findings-head-first {
-  width: 165px;
+
   text-align: left;
 }
 
 .findings-head-second {
   display: flex;
-  width: 365px;
   justify-content: space-between;
+  margin-left: 55px;
 
 }
 
@@ -150,37 +139,40 @@ transform: translate(-50%, 0%);
   display: flex;
   margin: 0px;
   padding: 0px;
-  width: 200px;
   justify-content: space-between;
 }
 
 .results-background {
   display: flex;
+  justify-content: space-between;
 }
 
-.results-picture {
-  width: 165px;
-  text-align: left;
+.hotel-part {
+  display: flex;
 }
+
+.hotels-book {
+  display: flex;
+}
+
+
 
 .results-information {
-  width: 650px;
+  margin-left: 30px;
+
   text-align: left;
 }
 
 .results-information-rate {
-  width: 240px;
-  text-align: right;
-  align-self: space-between; 
+  justify-content: flex-end; 
 }
 
 .results-information-more {
   display: flex;
 }
 
-.results-information-type {
-  width: 116px;
-
+.results-information-cost {
+  margin-left: 40px;
 }
 
 .site-navigation {
@@ -213,7 +205,6 @@ transform: translate(-50%, 0%);
 
 
 .advantage-item {
-  width: 400px;
   background-color: #EEEEEE;
 
 }
@@ -225,17 +216,10 @@ transform: translate(-50%, 0%);
 .advantage-item-white {
   background-color: #81B3D2;
   color: #FFFFFF;
-  width: 400px;
-}
-
-
-.service {
-  width: 400px;
-  list-style: none;
 }
 
 .big-parts,
-.footer-hashtag {
+.footer-hashtag-font {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -247,6 +231,10 @@ transform: translate(-50%, 0%);
   font-size: 12px;
   line-height: 18px;
   margin: 0px;
+}
+
+.sort-interactive {
+  margin-left: 30px;
 }
 
 .social-container { 
@@ -271,6 +259,12 @@ transform: translate(-50%, 0%);
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 
