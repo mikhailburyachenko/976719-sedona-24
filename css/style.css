@@ -1,4 +1,5 @@
 body {
+  margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -6,13 +7,17 @@ body {
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .container {
-  width:1200px;
-  margin: auto;
+  width: 1200px;
+  margin: 0 auto;
 }
+
+.main-container {
+  text-align: center;
+}
+
 a {
   text-decoration: none;
 }
@@ -35,19 +40,11 @@ img {
 .main-header-logo {
   position: absolute;
   left: 50%;
-  margin-right:-50%;
+  margin-right: -50%;
   transform: translate(-50%, 0%);
  }
 
-
-.navigation-left {
-  width: 478px;
-  padding: 0px;
-  display: flex;
-  text-align: center;
-}
-
-.navigation-list-left {
+.navigation-item {
   width: 239px;
 
 }
@@ -58,7 +55,7 @@ img {
 
 
 .advantages-list {
-  display:flex;
+  display: flex;
   flex-direction: column;
   list-style: none; 
   padding: 0px;
@@ -68,7 +65,7 @@ img {
 }
 
 .advantages-list-second {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   list-style: none;
 }
@@ -76,22 +73,22 @@ img {
 
 .second-advantage {
   padding: 45px 0px;
-  order:0;
+  order:  0;
 }
 
 .third-advantage {
-  order:1;
+  order: 1;
 }
 
 
 .brown-advantages {
-  display:flex;
-  order:3;
+  display: flex;
+  order:  3;
   justify-content: space-between;
 }
 
 .main-footer {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -101,6 +98,7 @@ img {
 }
 
 .footer-copyright {
+  display: flex;
   margin-right: 100px; 
 }
 
@@ -159,13 +157,9 @@ img {
 
 .results-information {
   margin-left: 30px;
-
   text-align: left;
 }
 
-.results-information-rate {
-  justify-content: flex-end; 
-}
 
 .results-information-more {
   display: flex;
@@ -175,26 +169,29 @@ img {
   margin-left: 40px;
 }
 
-.site-navigation {
+.navigation-list {
   list-style: none;
+  padding: 0px;
+  display: flex;
+  text-align: center;
 }
 
-.site-navigation a {
+.navigation-list a {
   color: #000000;
 }
 
-.site-navigation a:hover {
+.navigation-list a:hover {
   color: #81B3D2;
 }
 
-.site-navigation a:focus {
+.navigation-list a:focus {
   color: #B2B2B2;
 }
 
 .sort,
 .hotels-sort {
-    list-style: none;
-    padding: 0px;
+  list-style: none;
+  padding: 0px;
 }
 
 .slogan {
