@@ -27,6 +27,22 @@ img {
   height: auto;
 }
 
+.big-parts {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  margin: 0px; 
+  text-transform: uppercase;
+}
+
+
+.ultra-big-parts {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  margin: 0px;
+}
+
 .main-navigation {
   text-decoration: none;
   background-color: #FFFFFF;
@@ -46,30 +62,116 @@ img {
 
 .navigation-item {
   width: 239px;
-
 }
-
-.slogan {
-  margin-top: 60px;
-}
-
 
 .advantages-list {
   display: flex;
   flex-direction: column;
   list-style: none; 
   padding: 0px;
-  margin-top: 60px;
-  margin-bottom: 55px;
+  margin-top: 55px;
+  margin-bottom: 50px;
   justify-content: space-between;
 }
 
+
+.form-container {
+  width: 575px;
+  margin: auto;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  padding: 20px 120px;
+  background-color: #766357;
+  color: #FFFFFF;
+  border: none;
+}
+
+.button:hover {
+  background-color: #604E43;
+}
+
+.button:focus {
+  color: #847870;
+  background-color: #503E33;
+}
+
+.index-form {
+  text-align: left;
+  padding: 55px 55px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.index-form-full {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.index-form-full input {
+  width: 345px;
+  background-color: #F2F2F2;
+  border: none;
+}
+
+.index-form-half-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.index-form-half {
+  padding-bottom: 30px;
+
+}
+
+.index-form-half input {
+  width: 115px;
+  margin-left: 40px; 
+  background-color: #F2F2F2;
+  border: none;
+}
+
+.submit {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 140px;
+  background-color: #81B3D2;
+  color: #FFFFFF;
+  margin: auto;
+}
+
+.submit:hover {
+  background-color: #669EC0;
+}
+
+.submit:focus {
+  color: #87B6D1;
+  background-color: #5496BD;
+}
+
+.academy {
+  fill: #000000;
+}
+
+.submit-container {
+  text-align: center;
+}
+
 .advantages-list-second {
+  padding: 0;
   display: flex;
   justify-content: space-between;
   list-style: none;
 }
 
+.text-container {
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
 
 .second-advantage {
   padding: 45px 0px;
@@ -82,9 +184,11 @@ img {
 
 
 .brown-advantages {
+
   display: flex;
-  order:  3;
+  order: 3;
   justify-content: space-between;
+
 }
 
 .main-footer {
@@ -103,12 +207,12 @@ img {
 }
 
 
-.footer-social {
-  
-}
-
 .social-media {
-  display: flex;  
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 150px;
+  justify-content: space-between;
 }
 
 
@@ -153,8 +257,6 @@ img {
   display: flex;
 }
 
-
-
 .results-information {
   margin-left: 30px;
   text-align: left;
@@ -174,6 +276,7 @@ img {
   padding: 0px;
   display: flex;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 .navigation-list a {
@@ -195,15 +298,19 @@ img {
 }
 
 .slogan {
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
+  margin-top: 55px;
+  margin-bottom: 27px;
 }
 
 
 .advantage-item {
   background-color: #EEEEEE;
+  width: 400px;
+  padding: 50px 60px;
+}
 
+.advantage-item h3 {
+  padding: 0px 60px;
 }
 
 .first-advantage {
@@ -213,15 +320,22 @@ img {
 .advantage-item-white {
   background-color: #81B3D2;
   color: #FFFFFF;
+  padding: 48px 48px;
 }
 
-.big-parts,
-.footer-hashtag-font {
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
-  margin: 0px;
+
+.service {
+  width: 400px;
+  text-align: center;
+  padding: 15px 50px;
 }
+
+.service h3 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+
 
 .sort-high,
 .sort-interactive {
@@ -234,15 +348,50 @@ img {
   margin-left: 30px;
 }
 
-.social-container { 
-  width: 46px;
-  background-color: #81b3d2;
-  border: 1px solid #ccc;
-  list-style: none;
-  color: #000000;
+.social-button {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 46px;
+  height: 48px;
+  background-color: #81B3D2;
+} 
+
+.social-button:hover {
+  background-color: #669EC0;
+}
+
+.social-button:focus {
+  background-color: #5496BD;
+  fill: #87B6D1;
+}
+
+.academy {
+  width: 120px;
+  height: 45px;
+  margin-left: 10px;
+
+}
+
+.academy:hover path{
+  fill: #81B3D2;
+}
+
+.academy:active path{
+  fill: #BDBBBC;
+}
+
+.social-button:focus path{
+  fill: #87B6D1;
+}
+
+.social-button:hover {
+  background-color: #669EC0;
+}
+
+.social-button:focus {
+  background-color: #5496BD;
+  color: #87B6D1;
 }
 
 .current-page a {
