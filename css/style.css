@@ -30,8 +30,13 @@ img {
   height: auto;
 }
 
+.hotels-name {
+
+}
+
 .hotels-name a{
   color: #000000;
+
 }
 
 .hotels-name a:hover {
@@ -186,7 +191,7 @@ img {
 }
 
 .index-form-half {
-  padding-bottom: 30px;
+
   display: flex;
   
   align-items: center;
@@ -276,6 +281,7 @@ img {
 
 .submit-container {
   text-align: center;
+  margin-top: 53px;
 }
 
 .advantages-list-second {
@@ -297,7 +303,6 @@ img {
 
 .third-advantage {
   order: 1;
-  margin-bottom: 3px;
 }
 
 
@@ -378,11 +383,12 @@ fill: #81B3D2;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #E5E5E5;
-  padding: 27px 72px;
+  padding: 28px 72px;
 }
 
 .hotel-part {
   display: flex;
+  align-items: flex-end;
 }
 
 .hotels-book {
@@ -401,10 +407,12 @@ fill: #81B3D2;
 
 .results-information-text {
   margin-top: 5px;
+  margin-bottom: 15px;
 }
 
 .results-information-cost {
   margin-left: 5px;
+
 }
 
 .results-information-rate {
@@ -444,11 +452,13 @@ fill: #81B3D2;
   text-align: left;
   flex-wrap: wrap;
   margin-left: 73px;
+  width: 478px;
 }
 
 .text-right {
   text-align: right;
   margin-right: 71px;
+  margin-left: 0px;
 }
 
 .navigation-list a {
@@ -498,6 +508,7 @@ fill: #81B3D2;
   background-color: #EEEEEE;
   margin: 0px;
   flex-grow: 1;
+  padding-top: 3px;
 }
 
 .advantage-item h3 {
@@ -593,6 +604,7 @@ fill: #81B3D2;
   color: #FFFFFF;
   position: relative;
   z-index: 2;
+  font-weight: bold;
 }
 
 .type-button:hover {
@@ -612,6 +624,7 @@ fill: #81B3D2;
   height: 27px;
   background-color: #766357;
   color: #FFFFFF;
+  font-weight: bold;
 }
 
 .cost-button:hover {
@@ -631,6 +644,7 @@ fill: #81B3D2;
   height: 48px;
   background-color: #81B3D2;
   fill: #000000;
+  margin-bottom: 5px;
 } 
 
 .social-button:hover {
@@ -662,7 +676,7 @@ fill: #81B3D2;
 .parameters-checkbox {
   display: flex;
   justify-content: space-between;
-  padding-left: 73px;
+  padding-left: 71px;
 }
 
 .parameters-checkbox-comforts {
@@ -879,7 +893,7 @@ fill: #81B3D2;
 .main-footer {
   display: flex;
   align-items: center;
-  padding: 25px 0px;
+  padding: 23px 0px;
   
 }
 
