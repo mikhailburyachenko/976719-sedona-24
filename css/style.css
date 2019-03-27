@@ -35,15 +35,15 @@ img {
   padding-left: 2px;
 }
 
-.hotels-name a{
+.results-information a{
   color: #000000;
 }
 
-.hotels-name a:hover {
+.results-information a:hover {
   color: #81B3D2;
 }
 
-.hotels-name a:focus {
+.results-information a:focus {
   color: #B2B2B2;
 }
 
@@ -59,11 +59,6 @@ img {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
-  margin-bottom: 35px;
-}
-
-.ultra-big-parts-margin {
-  margin-bottom: 27px;
 }
 
 .main-navigation {
@@ -112,6 +107,7 @@ img {
   background-color: #766357;
   color: #FFFFFF;
   border: none;
+  vertical-align: middle;
 }
 
 .button:hover {
@@ -254,6 +250,7 @@ img {
   margin: auto;
   padding: 0px;
   border: none;
+  vertical-align: middle;
 }
 
 .submit:hover {
@@ -322,6 +319,7 @@ img {
 
 .text-container {
   margin-bottom: 50px;
+  margin-top: 28px;
 }
 
 .second-advantage {
@@ -451,12 +449,6 @@ fill: #81B3D2;
 .results-information {
   margin-left: 30px;
   text-align: left;
-}
-
-.results-information-more {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .results-information-text {
@@ -695,7 +687,7 @@ fill: #81B3D2;
   color: #81B3D2;
 }
 
-.type-button {
+.results-information-type-button a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -714,16 +706,17 @@ fill: #81B3D2;
   font-weight: bold;
 }
 
-.type-button:hover {
+.results-information-type-button a:hover {
+  color: #FFFFFF;
   background-color: #669EC0;
 }
 
-.type-button:active {
+.results-information-type-button a:active {
   background-color: #5496bd;
   color: #87b6d1;
 }
 
-.cost-button {
+.results-information-cost-button a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -740,11 +733,12 @@ fill: #81B3D2;
   font-weight: bold;
 }
 
-.cost-button:hover {
+.results-information-cost-button a:hover {
+  color: #FFFFFF;
   background-color: #604e43;
 }
 
-.cost-button:active {
+.results-information-cost-button a:active {
   background-color: #503e33;
   color: #766960;
 }
@@ -785,7 +779,7 @@ fill: #81B3D2;
   margin-top: 3px;
   background: url("../img/filter-background.png") top center no-repeat;
   background-size: 1200px 218px;
-  background-color: #FFFFFF;
+  background-color: #4D6474;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -842,7 +836,7 @@ fill: #81B3D2;
   width: 25px;
   height: 25px;
   margin-left: -40px;
-  background-image: url("../img/checkbox-off.svg");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cpath fill='%23FFFFFF' d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
 }
 
@@ -855,12 +849,20 @@ fill: #81B3D2;
 }
 
 .check-input:checked + .checkbox {
-  background-image: url("../img/checkbox-on.svg");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23' viewBox='0 0 27 23'%3E%3Cpath fill='%23FFFFFF' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath fill='%23FFFFFF' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E");
 }
 
 .check-input:focus + .checkbox {
   -webkit-box-shadow: 0 0 0 3px #81b3d2;
   box-shadow: 0 0 0 3px #81b3d2;
+}
+
+.check-input:disabled + .checkbox {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cpath fill='%236A6A6A' d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/%3E%3C/svg%3E%0A");
+}
+
+.check-input:checked:disabled + .checkbox {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23' viewBox='0 0 27 23'%3E%3Cpath fill='%236A6A6A' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath fill='%236A6A6A' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E");
 }
 
 .academy:hover path{
